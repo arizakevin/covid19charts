@@ -1,0 +1,15 @@
+{
+  "short_name": "Covid-19 Charts",
+  "name": "Simple and clean charts of Covid-19 data",
+  "icons": [
+    {
+      "src": "virus.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

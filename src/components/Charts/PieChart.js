@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { Chart } from 'chart.js';
 import './Canvas.css';
 
-export default function PieChart ({ data, title, colors }) {
+export default function PieChart (props) {
 	const chartContainer = useRef(null);
 
 	useEffect(() => {
@@ -13,9 +13,9 @@ export default function PieChart ({ data, title, colors }) {
 					mantainAspectRatio: false
 				},
 				data: {
-					labels: data.map(d => d.label),
+					labels: props.data.map(d => d.label),
 					datasets: [{
-						data: data.map(d => d.value),
+						data: props.data.map(d => d.value),
 						backgroundColor: // [NewConfirmed, TotalConfirmed, NewDeaths    , TotalDeaths, NewRecovered, TotalRecovered ]
                                             [   '#d9cc0f',    '#6ebf89'  , '#bf9d6e'    , '#bf756e'  , '#6ea4bf'   ,   '#22CECE'    ]
 					}]
@@ -26,7 +26,7 @@ export default function PieChart ({ data, title, colors }) {
   				newChartInstance.destroy();
   	  		}
   	  	}
-	},[data]);
+	},[props.data]);
 
 	return (
 		<canvas className="canvas" ref={chartContainer} />

@@ -55,7 +55,7 @@ export default function LineChart (props) {
 	  			newChartInstance.destroy();
   	  		}
   	  	}
-	}, [props]);
+	}, [props.data]);
 
 	const formatData = () => {
 		let formatedData = props.data.map(elt => {

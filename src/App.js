@@ -204,7 +204,6 @@ export default function App () {
   	   						            <div className="main chart-wrapper">
   	   						                <PieChart
   	   						          	 	   data={global}
-  	   						          	 	   title="Global"
   	   						                />
   	   						            </div>
   	  				               </div>
@@ -251,7 +250,6 @@ export default function App () {
                                                     <div className="main chart-wrapper">
                                                         <PieChart
                                                         data={cleanedCountryData}
-                                                        title={filteredCountryData[0][0].value}
                                                     />
                                                     </div>
                                                 </div>

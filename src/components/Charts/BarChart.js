@@ -51,7 +51,7 @@ export default function BarChart (props) {
   			newChartInstance.destroy();
   	  	}
   	  }
-  	},[props]);
+  	},[props.data]);
 
 	return (
 		<canvas className="canvas" ref={chartContainer} />

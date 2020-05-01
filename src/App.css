@@ -1,0 +1,113 @@
+.App {
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.particles {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.chart-wrapper {
+  padding: 2%;
+  display: flex;
+  margin-left: 8%;
+}
+
+.main.chart-wrapper {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.sub.chart-wrapper {
+  margin-top: 1%;
+  width: 29%;
+  height: 300px;
+}
+
+@media (max-width: 300px) {
+  .main.chart-wrapper {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.Loading {
+  position: absolute;
+  left: 46.5%;
+  top: 80%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+  font-size:2.9vw;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size:1.7vw;
+}
+
+h5 {
+  font-size:1.25vw;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size:4vw;
+  }
+  
+  h3 {
+    font-size:2vw;
+    margin-bottom: 0;
+  }
+  
+  h5 {
+    font-size:2vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size:5vw;
+  }
+  
+  h3 {
+    font-size:2.5vw;
+    margin-bottom: 0;
+  }
+  
+  h5 {
+    font-size:2.5vw;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  h1 {
+    font-size:6vw;
+  }
+  
+  h3 {
+    font-size:3.5vw;
+    margin-bottom: 0;
+  }
+  
+  h5 {
+    font-size:3vw;
+  }
+}

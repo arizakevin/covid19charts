@@ -1,0 +1,65 @@
+.Tilt {
+	height: 9vw;
+	width: 6vw;
+}
+
+.img {
+	padding-top: 1.5em;
+	height: 7vw;
+	width: auto;
+}
+
+@media only screen and (max-width: 900px) {
+	.Tilt {
+		height: 11vw;
+		width: 8vw;
+		margin-bottom: 1vw;
+	}
+	.img {
+		height: 9vw;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.Tilt {
+		height: 13vw;
+		width: 9vw;
+		margin-bottom: 2vw;
+	}
+	.img {
+		height: 10vw;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.Tilt {
+		height: 14vw;
+		width: 10vw;
+		margin-bottom: 3vw;
+	}
+	.img {
+		height: 12vw;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	.Tilt {
+		height: 16vw;
+		width: 12vw;
+		margin-bottom: 6vw;
+	}
+	.img {
+		height: 15vw;
+	}
+}
+
+@media only screen and (max-width: 300px) {
+	.Tilt {
+		height: 18vw;
+		width: 15vw;
+		margin-bottom: 8vw;
+	}
+	.img {
+		height: 17vw;
+	}
+}
